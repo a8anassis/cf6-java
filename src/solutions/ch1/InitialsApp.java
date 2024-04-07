@@ -1,4 +1,4 @@
-package gr.aueb.cf.solutions.ch1;
+package solutions.ch1;
 
 /**
  * Εκτυπώνει τα αρχικά του ονόματος

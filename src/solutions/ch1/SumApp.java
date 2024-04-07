@@ -1,4 +1,4 @@
-package gr.aueb.cf.solutions.ch1;
+package solutions.ch1;
 
 /**
  * Πρώτον: Δηλώνει δύο μεταβλητές ακεραίων num1 και num2

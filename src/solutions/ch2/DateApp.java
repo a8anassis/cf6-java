@@ -1,4 +1,4 @@
-package gr.aueb.cf.solutions.ch2;
+package solutions.ch2;
 
 import java.util.Scanner;
 
