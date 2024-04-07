@@ -2,6 +2,8 @@ package gr.aueb.cf.ch2;
 
 /**
  * Demo της κλάσης Math.
+ *
+ * @author a8ana
  */
 public class MyMathApp {
 

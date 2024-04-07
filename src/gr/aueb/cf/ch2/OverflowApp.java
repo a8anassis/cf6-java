@@ -3,6 +3,8 @@ package gr.aueb.cf.ch2;
 /**
  * Ελέγχει την υπερχείληση στην περίπτωση
  * που συμβεί.
+ *
+ * @author a8ana
  */
 public class OverflowApp {
 

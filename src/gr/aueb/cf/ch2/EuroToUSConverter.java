@@ -7,6 +7,8 @@ import java.util.Scanner;
  * συμβολίζει ένα ποσό σε ευρώ και το μετατρέπει
  * με βάση κάποια ισοτιμία (parity) σε US dollars
  * και US cents.
+ *
+ * @author a8ana
  */
 public class EuroToUSConverter {
 

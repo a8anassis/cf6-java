@@ -5,6 +5,8 @@ import java.util.Scanner;
 /**
  * Διαβάζει δύο ακεραίους από τον standard input,
  * τους προσθέτει και εκτυπώνει το αποτέλεσμα.
+ *
+ * @author a8ana
  */
 public class ScannerAddApp {
 

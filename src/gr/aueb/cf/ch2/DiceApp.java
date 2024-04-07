@@ -1,5 +1,11 @@
 package gr.aueb.cf.ch2;
 
+/**
+ * Dice Demo with Math.random
+ *
+ * @author a8ana
+ *
+ */
 public class DiceApp {
 
     public static void main(String[] args) {

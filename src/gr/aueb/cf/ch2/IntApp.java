@@ -3,6 +3,8 @@ package gr.aueb.cf.ch2;
 /**
  * Εμφανίζει τους τύπους δεδομένων ακεραίων (int, short, byte, long)
  * το μέγεθός τους (size σε bits), και το εύρος τιμών.
+ *
+ * @author a8ana
  */
 public class IntApp {
 

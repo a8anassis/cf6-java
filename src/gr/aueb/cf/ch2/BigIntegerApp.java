@@ -5,6 +5,8 @@ import java.math.BigInteger;
 /**
  * Χρησιμοποιεί την κλάση BigInteger ώστε να μην
  * έχουμε υπερχείλιση (overflow).
+ *
+ * @author a8ana
  */
 public class BigIntegerApp {
 

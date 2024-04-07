@@ -4,6 +4,8 @@ package gr.aueb.cf.ch2;
  * Template for programming.
  * Πολλαπλασιάζει δύο ακεραίους και εκτυπώνει
  * το αποτέλεσμα στην κονσόλα.
+ *
+ * @author a8ana
  */
 public class Output2App {
 

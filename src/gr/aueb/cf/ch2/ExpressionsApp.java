@@ -1,8 +1,10 @@
 package gr.aueb.cf.ch2;
 
 /**
- * Επιδεικνύει την χρήση αριθμητικών τελεστών
+ * Επιδεικνύει τη χρήση αριθμητικών τελεστών
  * σε αριθμητικές παραστάσεις (expressions).
+ *
+ * @author a8ana
  */
 public class ExpressionsApp {
 

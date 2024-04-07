@@ -3,6 +3,8 @@ package gr.aueb.cf.ch2;
 /**
  * Προσθέτει δύο ακεραίους και εμφανίζει το
  * αποτέλεσμα στην κονσόλα (standard output).
+ *
+ * @author a8ana
  */
 public class AddApp {
 

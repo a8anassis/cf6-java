@@ -3,6 +3,8 @@ package gr.aueb.cf.ch2;
 /**
  * Επιδεικνύει τις μετατροπές μεταξύ
  * διαφορετικών τύπων δεδομένων.
+ *
+ * @author a8ana
  */
 public class TypecastApp {
 
