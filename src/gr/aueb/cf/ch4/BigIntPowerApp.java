@@ -21,7 +21,6 @@ public class BigIntPowerApp {
         for (int i = 1; i <= power.intValue(); i++) {
             result = result.multiply(base);
         }
-
         System.out.printf("%d^%d = %,d", base, power, result);
     }
 }
