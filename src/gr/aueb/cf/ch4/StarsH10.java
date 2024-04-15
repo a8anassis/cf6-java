@@ -3,7 +3,7 @@ package gr.aueb.cf.ch4;
 /**
  * Εκτυπώνει 10 οριζόντια stars
  */
-public class Stars10 {
+public class StarsH10 {
 
     public static void main(String[] args) {
 
