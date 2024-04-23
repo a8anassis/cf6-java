@@ -23,7 +23,10 @@ public class CalculatorApp {
         while (true) {
             printMenu();
             choice = getChoice();
+
             if (choice == 'q' || choice == 'Q') break;
+
+
             result = getResultFromChoiceOrError(choice);
             if (isError) continue;
             printResult(result);
