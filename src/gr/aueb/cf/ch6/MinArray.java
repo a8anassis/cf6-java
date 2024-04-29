@@ -27,4 +27,17 @@ public class MinArray {
         }
         return minPosition;
     }
+
+    public static int findMax(int[] arr) {
+        int max = Integer.MIN_VALUE;
+        int maxPosition = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                maxPosition = i;
+            }
+        }
+        return maxPosition;
+    }
 }
