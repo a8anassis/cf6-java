@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class FileInOut2App {
@@ -15,7 +16,7 @@ public class FileInOut2App {
         String[] tokens;
 
         try (Scanner in = new Scanner(inFd);
-             PrintStream ps = new PrintStream(outFd)) {
+             PrintStream ps = new PrintStream(outFd, StandardCharsets.UTF_8)) {
             while (in.hasNextLine()) {
                 line = in.nextLine();
                 tokens = line.split(" +");

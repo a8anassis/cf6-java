@@ -3,6 +3,7 @@ package gr.aueb.cf.ch9;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class FileInOutApp {
@@ -14,7 +15,7 @@ public class FileInOutApp {
         String[] tokens;
 
         try (Scanner in = new Scanner(inFd);
-             PrintWriter pw = new PrintWriter(outFd)) {
+             PrintWriter pw = new PrintWriter(outFd, StandardCharsets.UTF_8)) {
             while (in.hasNextLine()) {
                 line = in.nextLine();
                 tokens = line.split(" +");
