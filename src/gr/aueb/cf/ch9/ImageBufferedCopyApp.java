@@ -17,7 +17,7 @@ public class ImageBufferedCopyApp {
 
             start = System.currentTimeMillis();
             while ((b = bis.read(buf, 0, buf.length)) != -1) {
-                bos.write(b);
+                bos.write(buf, 0, b);
                 count += b;
             }
             end = System.currentTimeMillis();
