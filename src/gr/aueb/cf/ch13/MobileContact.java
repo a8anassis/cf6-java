@@ -46,17 +46,20 @@ public class MobileContact {
     }
 
 
+    // Service API
+
+
 
 
 
     // CRUD API
 
-    public static boolean insertContact(String firstname, String lastname, String phoneNumber) {
-        if (isFull(contacts)) {
+    public boolean insertContact() {
+        if (isFull()) {
             return false;
         }
 
-        if (getIndexByPhoneNumber(phoneNumber) != -1) {
+        if (getIndexByPhoneNumber() != -1) {
             return false;
         }
 
@@ -67,8 +70,8 @@ public class MobileContact {
         return true;
     }
 
-    public static boolean updateContact(String firstname, String lastname, String phoneNumber) {
-        int positionToUpdate = getIndexByPhoneNumber(phoneNumber);
+    public boolean updateContact() {
+        int positionToUpdate = getIndexByPhoneNumber();
 
         if (positionToUpdate == -1) {
             return false;
@@ -79,8 +82,8 @@ public class MobileContact {
         return true;
     }
 
-    public static boolean deleteContact(String phoneNumber) {
-        int positionToDelete = getIndexByPhoneNumber(phoneNumber);
+    public boolean deleteContact() {
+        int positionToDelete = getIndexByPhoneNumber();
 
         if (positionToDelete == -1) {
             return false;
@@ -94,8 +97,8 @@ public class MobileContact {
         return true;
     }
 
-    public static MobileContact getContactByPhoneNumber(String phoneNumber) {
-        int positionToReturn = getIndexByPhoneNumber(phoneNumber);
+    public MobileContact getContactByPhoneNumber() {
+        int positionToReturn = getIndexByPhoneNumber();
         return (positionToReturn == -1) ? null : contacts[positionToReturn];
     }
 
@@ -103,17 +106,21 @@ public class MobileContact {
         return Arrays.copyOf(contacts, pivot + 1) ;
     }
 
-    private static boolean isFull(MobileContact[] contacts) {
+    private boolean isFull() {
         return pivot == contacts.length - 1;
     }
 
-    private static int getIndexByPhoneNumber(String phoneNumber) {
+    private int getIndexByPhoneNumber() {
         for (int i = 0; i <= pivot; i++) {
             if (contacts[i].getPhoneNumber().equals(phoneNumber)) {
                 return i;
             }
         }
         return -1;
+    }
+
+    public String contactToString() {
+        return firstname + ", " + lastname + ", " + phoneNumber;
     }
 
 }
