@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch12;
+package gr.aueb.cf.ch12.model;
 
 /**
  * POJO - Java Bean.

@@ -1,5 +1,7 @@
 package gr.aueb.cf.ch12;
 
+import gr.aueb.cf.ch12.model.Point;
+
 /**
  * Driver class.
  */
