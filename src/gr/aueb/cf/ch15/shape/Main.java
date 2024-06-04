@@ -11,6 +11,13 @@ public class Main {
         // Polymorphism
         for (Shape shape : shapes) {
             shape.draw();
+            if (shape instanceof Circle) {
+                System.out.println("it is a circle");
+            } else if (shape instanceof Square) {
+                System.out.println("it is a square");
+            } else {
+                System.out.println("Unknown type");
+            }
         }
     }
 }
