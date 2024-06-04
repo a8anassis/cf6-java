@@ -25,4 +25,22 @@ public class Point2D extends Point {
     public String convertToString() {
         return "(" + getX() + ", " + y + ")";
     }
+
+    @Override
+    public void movePlus10() {
+        super.movePlus10();
+        y += 10;
+    }
+
+    @Override
+    public void movePlusOne() {
+        super.movePlusOne();
+        y += 1;
+    }
+
+    @Override
+    protected void reset() {
+        super.reset();
+        y = 0;
+    }
 }
