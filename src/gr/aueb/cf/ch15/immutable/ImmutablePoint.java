@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch15.immutable;
 
-public class ImmutablePoint {
+public final class ImmutablePoint {
 
     private final int x;
     private final int y;
