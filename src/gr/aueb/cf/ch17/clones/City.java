@@ -1,5 +1,7 @@
 package gr.aueb.cf.ch17.clones;
 
+import java.util.Objects;
+
 public class City implements Cloneable {
     private String description;
 
@@ -10,6 +12,12 @@ public class City implements Cloneable {
     public City(String description) {
         this.description = description;
     }
+
+    // Copy Constructor
+    public City(City city) {
+        this.description = city.getDescription();
+    }
+
 
     public String getDescription() {
         return description;
@@ -27,5 +35,20 @@ public class City implements Cloneable {
     @Override
     protected City clone() throws CloneNotSupportedException {
         return (City) super.clone();
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) return true;
+        if (other == null || this.getClass() != other.getClass()) return false;
+
+        City city = (City) other;
+
+        return this.getDescription().equals(city.getDescription());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getDescription());
     }
 }
