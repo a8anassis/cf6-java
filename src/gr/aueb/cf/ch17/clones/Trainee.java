@@ -1,8 +1,10 @@
 package gr.aueb.cf.ch17.clones;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Trainee implements Cloneable {
+public class Trainee implements Cloneable, Serializable {
+    private static final long serialVersionUID = 1L;
     private String name;
     private City city;
 

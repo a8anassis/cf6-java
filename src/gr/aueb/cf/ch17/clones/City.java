@@ -1,9 +1,12 @@
 package gr.aueb.cf.ch17.clones;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class City implements Cloneable {
+public class City implements Cloneable, Serializable {
+    private static final long serialVersionUID = -1236784L;
     private String description;
+    private transient long hashCode;
 
     public City() {
 
