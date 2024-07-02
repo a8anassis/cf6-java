@@ -13,6 +13,7 @@ public class Main {
         cities.add("Athens");
         cities.add("Paris");
         cities.add("kalavrita-city");
+        cities.add(2, "London");
 
         // Get
         String myCity = cities.get(0);
