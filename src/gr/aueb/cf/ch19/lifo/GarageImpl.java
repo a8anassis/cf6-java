@@ -3,7 +3,6 @@ package gr.aueb.cf.ch19.lifo;
 public class GarageImpl implements IGarage {
     // Dependency Injection
     private IStorage<String> storage;
-    //private final int SIZE = 15;
     private int length = 0;
 
     public GarageImpl(IStorage<String> storage) {
@@ -38,8 +37,8 @@ public class GarageImpl implements IGarage {
     }
 
     @Override
-    public String[] toArray(String[] a) {
-        return storage.toArray(a);
+    public String[] getCars() {
+        return storage.toArray(new String[0]);
     }
 
     @Override
