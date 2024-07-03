@@ -5,6 +5,7 @@ import gr.aueb.cf.ch19.sorting.Product;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -40,10 +41,25 @@ public class Main {
 //
 //        productPrices.forEach(System.out::println);
 
-        List<Product> increasedPricesProducts = products.stream()
-                .map(p -> new Product(p.getDescription(), p.getPrice() + p.getPrice() * 0.1, p.getQuantity()))
-                .collect(Collectors.toList());
+//        List<Product> increasedPricesProducts = products.stream()
+//                .map(p -> new Product(p.getDescription(), p.getPrice() + p.getPrice() * 0.1, p.getQuantity()))
+//                .collect(Collectors.toList());
+//
+//        increasedPricesProducts.forEach(System.out::println);
 
-        increasedPricesProducts.forEach(System.out::println);
+//        int honeyCount = products.stream()
+//                .filter(p -> p.getDescription().equals("Honey"))
+//                .reduce(0, (total, p) -> total + p.getQuantity(), Integer::sum);
+//
+//        int honeySum = products.stream()
+//                .filter(p -> p.getDescription().equals("Honey"))
+//                .mapToInt(Product::getQuantity)
+//                .sum();
+
+        Optional<Product> opt = products.stream()
+                .filter(p -> p.getPrice() >= 8.50 && p.getQuantity() <= 10)
+                .findFirst();
+
+        System.out.println(opt.orElse(new Product()));
     }
 }
