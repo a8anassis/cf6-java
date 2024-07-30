@@ -20,7 +20,7 @@ public class ConcurrentDateTimeServer implements Runnable {
             bw.write(new Date().toString());
             bw.flush();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 }
