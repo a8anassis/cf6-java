@@ -26,12 +26,11 @@ public class FileExceptionApp {
 
         try (Scanner in = new Scanner(fd)) {
             num = in.nextInt();
+            return num;
         } catch (FileNotFoundException | InputMismatchException e) {
             System.err.println("Error.");
             //e.printStackTrace();
             throw e;
         }
-
-        return num;
     }
 }

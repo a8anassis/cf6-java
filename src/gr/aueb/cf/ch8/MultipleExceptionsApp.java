@@ -23,8 +23,8 @@ public class MultipleExceptionsApp {
             System.out.println("IO Exception");
             throw e;
         }
-        /*catch (InputMismatchException e) {
+        catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
     }
 }
