@@ -12,6 +12,8 @@ public class IndexOfSubstringApp {
         int positionOfNextO = s.indexOf("ory", 2);
         System.out.println("Position of o: " + positionOfo);
         System.out.println("Position of next o: " + positionOfNextO);
+        int lastPos = s.lastIndexOf("o");
+        System.out.println("Position of next o: " + lastPos);
 
         String odToEnd = s.substring(1);
         System.out.println(odToEnd);

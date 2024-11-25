@@ -3,9 +3,9 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * Generic version of while.
+ * Generic Nested version of while.
  */
-public class GenericWhile {
+public class GenericNestedWhile {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

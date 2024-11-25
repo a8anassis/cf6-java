@@ -13,5 +13,13 @@ public class StrCompareApp {
         } else {                                    // s1.compareTo(s2) == 0
             System.out.println("s1 == s2");
         }
+
+        if (s1.compareToIgnoreCase(s2) >0) {
+            System.out.println("s1 > s2");
+        } else if (s1.compareTo(s2) < 0) {
+            System.out.println("s1 < s2");
+        } else {                                    // s1.compareTo(s2) == 0
+            System.out.println("s1 == s2");
+        }
     }
 }
