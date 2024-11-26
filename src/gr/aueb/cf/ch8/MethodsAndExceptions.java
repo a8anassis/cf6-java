@@ -71,4 +71,48 @@ public class MethodsAndExceptions {
             throw e;
         }
     }
+
+    public static char readAgainOneChar(char ch) throws IllegalArgumentException, IOException {
+        try {
+            char inputChar = (char) System.in.read();
+            if (inputChar != ch) throw new IllegalArgumentException("char not fit");
+            // we need custom exception
+            return inputChar;
+        } catch (IOException | IllegalArgumentException e) {
+            e.printStackTrace();
+            System.err.println(e.getMessage());
+            throw e;
+        }
+
+//        } catch (IllegalArgumentException e) {
+//            e.printStackTrace();
+//            System.err.println("IO Error. " + e.getMessage());
+//            throw e;
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//            System.err.println("IO Exception. " + e.getMessage());
+//            throw e;
+//        }
+    }
+
+    public static char readAgainAndAgainOneChar(char ch) throws Exception {
+        try {
+            char inputChar = (char) System.in.read();
+            if (inputChar != ch) throw new Exception("char not fit"); // not good to use generic
+            return inputChar;
+//        } catch (Exception e) {     // Exception includes IOException, Exception is generic
+//            e.printStackTrace();
+//            System.err.println(e.getMessage());
+//            throw e;
+//        }
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("IO Error. " + e.getMessage());
+            throw e;
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Generic Error. " + e.getMessage());
+            throw e;
+        }
+    }
 }
