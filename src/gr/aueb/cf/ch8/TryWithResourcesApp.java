@@ -7,9 +7,10 @@ public class TryWithResourcesApp {
 
     public static void main(String[] args) {
         int num = 0;
-        Scanner in = new Scanner(System.in);
+//        Scanner in = new Scanner(System.in);
 
-        try (in) {
+        //try (in) {
+        try (Scanner in = new Scanner(System.in)) {
             System.out.println("Insert a num");
             num = in.nextInt();
         } catch (InputMismatchException e) {

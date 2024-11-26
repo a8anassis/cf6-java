@@ -40,7 +40,7 @@ public class SimpleBank {
         }
     }
 
-    public static void deposit(double amount) {
+    public static void deposit(double amount) throws IllegalArgumentException {
         System.out.print("Enter amount to deposit: ");
         try {
 
