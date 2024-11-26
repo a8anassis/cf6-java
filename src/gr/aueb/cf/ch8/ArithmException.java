@@ -12,7 +12,7 @@ public class ArithmException {
         int result = 0;
 
         while (true) {
-            try {
+//            try {
                 System.out.println("Please insert numerator and denominator");
                 numerator = in.nextInt();
                 if (numerator == 0) break;
@@ -22,13 +22,13 @@ public class ArithmException {
                 result = numerator / denominator;
 
                 System.out.printf("%d / %d = %d\n", numerator, denominator, result);
-            } catch (ArithmeticException e) {
-                //e.printStackTrace();
-                System.out.println("Error. Denominator can not be zero");
-            } catch (InputMismatchException e) {
-                in.nextLine();  // recover
-                System.out.println("Error. Please insert an integer");
-            }
+//            } catch (ArithmeticException e) {
+//                //e.printStackTrace();
+//                System.out.println("Error. Denominator can not be zero");
+//            } catch (InputMismatchException e) {
+//                in.nextLine();  // recover
+//                System.out.println("Error. Please insert an integer");
+//            }
         }
         System.out.println("Thanks for using the app");
     }
