@@ -30,6 +30,8 @@ public class MethodsAndExceptions {
      * or has to be caught {@link #readAnotherChar()}.
      * When this type of method may be used? When no need
      * for action (handle) when the exception occurs.
+     * Is this meaningful? No, ideally we would like to
+     * handle exceptions, not only propagate.
      *
      * @return
      * @throws IOException
@@ -44,6 +46,8 @@ public class MethodsAndExceptions {
      * Is it good practice not to propagate? It depends.
      * If there is a caller then we have to propagate the exception,
      * if not, then we do not propagate the exception {@link #main(String[])}
+     * So no propagation happens only on client-accessed methods.
+     * Otherwise, we propagate
      *
      * @return
      */
