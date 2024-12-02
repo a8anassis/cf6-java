@@ -4,7 +4,11 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class ImageCopyApp {
+/**
+ * Αντιγράφει ένα pdf αρχείο (ως binary file)
+ * αντιγράφοντας 1 byte τη φορά
+ */
+public class PdfCopyApp {
 
     public static void main(String[] args) {
 
@@ -25,7 +29,8 @@ public class ImageCopyApp {
             end = System.currentTimeMillis();
             elapsedTime = (end - start) / 1000.0;
 
-            System.out.printf("Το αρχείο με μέγεθος %dΚΒ (%d bytes) αντιγράφηκε επιτυχώς", (count / 1024), count);
+            System.out.printf("Το αρχείο με μέγεθος %dΚΒ (%d bytes) αντιγράφηκε επιτυχώς",
+                    (count / 1024), count);
             System.out.println("Elapsed time: " + elapsedTime + " seconds");
 
         } catch (IOException e) {

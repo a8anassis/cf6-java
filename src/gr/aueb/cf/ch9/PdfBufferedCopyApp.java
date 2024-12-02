@@ -2,7 +2,7 @@ package gr.aueb.cf.ch9;
 
 import java.io.*;
 
-public class ImageBufferedCopyApp {
+public class PdfBufferedCopyApp {
 
     public static void main(String[] args) {
         try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream("C:/tmp/museum-in.pdf"));
@@ -16,7 +16,7 @@ public class ImageBufferedCopyApp {
             byte[] buf = new byte[4096];
 
             start = System.currentTimeMillis();
-            while ((b = bis.read(buf, 0, buf.length)) != -1) {
+            while ((b = bis.read(buf)) != -1) {
                 bos.write(buf, 0, b);
                 count += b;
             }

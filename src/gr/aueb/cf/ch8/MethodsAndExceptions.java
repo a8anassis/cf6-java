@@ -16,8 +16,8 @@ public class MethodsAndExceptions {
         char ch = ' ';
 
         try {
-            // ch = readOneChar();
-            ch = readAnotherOneChar();
+            ch = readOneChar();
+            //ch = readAnotherOneChar();
         } catch (IOException e) {
             System.out.println("Error. Can not read a char.");
         }
@@ -37,6 +37,8 @@ public class MethodsAndExceptions {
      * @throws IOException
      */
     public static char readOneChar() throws IOException {
+        int ch;
+        //if ((ch = System.in.read()) == 65) throw new IOException("");
         return (char) System.in.read();
     }
 
