@@ -22,6 +22,7 @@ public final class ImmutablePoint3D {
         return z;
     }
 
+
     @Override
     public String toString() {
         return "ImmutablePoint3D{" +
