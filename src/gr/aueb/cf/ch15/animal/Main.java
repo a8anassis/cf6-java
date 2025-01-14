@@ -7,8 +7,15 @@ public class Main {
         dog.makeSound();
         dog.searchForFood();
 
+        doMakeSound(dog);
+
         System.out.println("Name: " + dog.getName()
                 + ", Age: " + dog.getAge()
                 + "Breed: " + dog.getBreed());
+    }
+
+    // Polymorphic
+    public static void doMakeSound(Animal animal) {
+        animal.makeSound();
     }
 }
