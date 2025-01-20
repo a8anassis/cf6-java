@@ -6,6 +6,7 @@ public class Human implements ISpeakable, IReadable {
         System.out.println("I read.");
     }
 
+
     @Override
     public void speak() {
         System.out.println("I speak.");

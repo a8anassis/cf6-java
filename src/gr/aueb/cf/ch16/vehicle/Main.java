@@ -16,5 +16,11 @@ public class Main {
 
         moto1.start();
         moto1.stop();
+
+        doStartVehicle(moto1);
+    }
+
+    public static void doStartVehicle(IVehicle iVehicle) {
+        iVehicle.start();
     }
 }
