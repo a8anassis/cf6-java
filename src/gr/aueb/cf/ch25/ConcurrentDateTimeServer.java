@@ -19,6 +19,7 @@ public class ConcurrentDateTimeServer implements Runnable {
         try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(sockFd.getOutputStream()))) {
             bw.write(new Date().toString());
             bw.flush();
+            sockFd.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

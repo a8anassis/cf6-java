@@ -16,7 +16,6 @@ public class DateTimeCli {
             //InetAddress servAddress = InetAddress.getByName("time.nist.gov");
             InetAddress servAddress = InetAddress.getByName("127.0.0.1");
             int servPort = 13;
-
             socket = new Socket(servAddress, servPort);
 
             BufferedReader bf = new BufferedReader(new InputStreamReader(socket.getInputStream()));
